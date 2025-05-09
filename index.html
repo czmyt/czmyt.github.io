@@ -4,39 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <title>www.czmyt.com Home</title>
+
+  <style>
+    body {
+      background-color: gray;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16pt;
+    }
+
+    table {
+      border-spacing: 25px;
+    }
+
+    td {
+      text-align: center;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    a {
+      color: black;
+    }
+  </style>
 </head>
 
-<body style="background-color: silver">
+<body>
   <div align="center">
-    <pre class="mermaid">
-
-      flowchart TB
-
-        www["`<a href="https://www.czmyt.com">www.czmyt.com</a >
-          alias <a href="https://czmyt.com">czmyt.com</a>
-          **You** are _here_.`"]
-
-        steve["`<a href="https://steve.czmyt.com">steve.czmyt.com</a>
-          My personal website.`"]
-
-        www@{shape: doc} --> steve@{shape: docs}
-
-    </pre>
+    <table>
+      <tr>
+        <td>
+          <a href="https://www.czmyt.com">www.czmyt.com</a>
+          <br />alias <a href="https://czmyt.com">czmyt.com</a>
+          <br /><b>You</b> are <i>here</i>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://steve.czmyt.com">steve.czmyt.com</a>
+          <br />My personal website.
+        </td>
+      </tr>
+    </table>
+    <p style="font-size: 10pt;">
+      <br />© 2025 Steve Schmidt.  All rights reserved.
+      <br /><a href="https://steve.czmyt.com/terms-and-conditions">Terms and Conditions</a> incorporated herein.
+    </p>
   </div>
-
-  <!-- color: white; -->
-  <div align="center" style="font-size: 10pt">
-    <br />&nbsp;
-    <br />&nbsp;
-    <br />Chart made with <a href="https://mermaid.js.org/">Mermaid</a> <a href="https://mermaid.js.org/syntax/flowchart.html">Flowchart</a>.
-    <br />© 2025 Steve Schmidt.  All rights reserved.
-    <br /><a href="https://steve.czmyt.com/terms-and-conditions">Terms and Conditions</a> incorporated herein.
-  </div>
-
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
 </body>
 
 </html>
